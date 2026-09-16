@@ -5,7 +5,7 @@ from reportlab.lib.units import inch
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 from reportlab.lib import colors
 
-OUTPUT = "output/pdf/Northstar_Financial_Customer_Security_Recommendation.pdf"
+OUTPUT = "cyber/output/Northstar_Financial_Customer_Security_Recommendation.pdf"
 
 doc = SimpleDocTemplate(
     OUTPUT,

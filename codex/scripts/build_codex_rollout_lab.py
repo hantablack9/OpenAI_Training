@@ -5,7 +5,7 @@ from reportlab.lib.units import inch
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 from reportlab.lib import colors
 
-OUTPUT = "output/pdf/Codex_Enterprise_Rollout_Design.pdf"
+OUTPUT = "codex/output/Codex_Enterprise_Rollout_Design.pdf"
 
 doc = SimpleDocTemplate(
     OUTPUT,
