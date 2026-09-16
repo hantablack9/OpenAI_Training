@@ -80,5 +80,3 @@ pip install reportlab
 python codex/scripts/build_codex_rollout_lab.py
 python cyber/scripts/build_northstar_lab.py
 ```
-
-`tmp/` holds scratch copies of the build scripts and preview renders used while drafting the labs.
