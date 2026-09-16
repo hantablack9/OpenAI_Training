@@ -4,6 +4,10 @@
 
 Design and scale governed Codex deployments that fit the customer’s software-development environment. Start from workflow friction and customer context, then select the collaboration pattern, safeguards, rollout evidence, and operating model.
 
+## In plain English
+
+Codex is most useful when it removes a repeatable engineering bottleneck without removing engineering judgment. Start with one task a team already understands, give Codex only the context and permissions it needs, and expand only after people can verify the result safely.
+
 ## Golden principles
 
 - Match the collaboration pattern to the workflow—not the other way around.
@@ -70,9 +74,13 @@ Recommend the smallest governed Codex workflow that addresses verified engineeri
 - Codex Use Cases: Deployment Depth — completed. Prioritize by workflow value and customer fit, classify depth from lightweight support to deeper integration, apply proportionate safeguards, and expand only when readiness evidence supports the next stage.
 - Advanced Codex Lab - Coding Task Tracker — all lab steps completed; final submission accepted and awaiting review.
 
-## Current program status
+## Program status snapshot
 
-The coding-task lab review has cleared. The enterprise rollout lab is now complete and its PDF one-pager has been submitted successfully; the program is awaiting review before the final exam and feedback unlock.
+On the last recorded dashboard check (2026-09-11), the coding-task lab review had cleared and the enterprise rollout lab PDF had been submitted. PartnerU showed the enterprise lab as awaiting review, with the final exam and feedback locked. This is a historical snapshot; re-check the dashboard before relying on it.
+
+On 2026-09-16, the Codex Deployment Practitioner final exam was completed with a score of 20/20. The PartnerU course page confirmed “Course completed.”
+
+Later on 2026-09-16, the four-question feedback form was submitted successfully. PartnerU then showed the overall program as “Program completed” and made a new certificate available.
 
 ## Advanced Codex Lab - Enterprise Rollout Design
 
@@ -80,4 +88,4 @@ The coding-task lab review has cleared. The enterprise rollout lab is now comple
 - Deliverable submitted: one-page PDF rollout design covering surface, model, context continuity, governance, cloud, integrations, and admin decisions.
 - Guardrails: billing repository scope, no production testing or release/merge/permission decisions, pinned setup, secrets kept in an approved store, internet off unless allowlisted, and human approval gates.
 - Recovery patterns: checkpoint long-running work at milestones and before compaction; on failure or drift, preserve the last known-good state, isolate or revert, rerun focused verification, and request reviewer disposition.
-- Current status: enterprise rollout lab is submitted and awaiting review; a follow-up check still shows the final exam and feedback locked until review clears.
+- Status at the 2026-09-11 check: enterprise rollout lab submitted and awaiting review; the final exam and feedback were locked until review cleared.

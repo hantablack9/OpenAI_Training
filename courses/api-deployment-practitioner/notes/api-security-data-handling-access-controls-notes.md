@@ -4,6 +4,10 @@
 
 Before pilot, production review, or customer handoff, make five boundaries visible: data, access/secrets, action/approval, evidence/remediation, and readiness. This is a first-pass review aid—not legal, privacy, compliance, identity, or full security architecture approval.
 
+## In plain English
+
+Security review is easier when you can answer five simple questions: what data moves, who can call the system, what it may change, what evidence is kept, and who decides whether it is ready. If an answer is unknown, label it as unknown instead of filling the gap with an assumption.
+
 ## 1) Data boundary
 
 - Map the full flow: what enters, source/owner, processing/transformation, output, temporary or persistent storage, logs, downstream destinations, and anything leaving the environment.
@@ -46,3 +50,9 @@ Before pilot, production review, or customer handoff, make five boundaries visib
 - Use approved, sanitized project information; never include real credentials, raw sensitive logs, regulated data, or unapproved confidential material.
 - Verify official OpenAI data-controls, API-key safety, and permissions guidance as of a recorded date.
 - Make the next owner and evidence requirement explicit. A vague “security review later” is not actionable.
+
+## Fact-check (2026-09-16)
+
+OpenAI’s current API guidance says API data is not used to train models by default, but storage and retention still depend on abuse-monitoring treatment, endpoint behavior, and application state. Zero Data Retention and Modified Abuse Monitoring are eligibility-controlled options and should never be promised from a generic architecture note. Confirm the account, project, endpoint, feature, and approval state before making a customer-facing claim.
+
+See [Your data](https://developers.openai.com/api/docs/guides/your-data) and the [API overview](https://developers.openai.com/api/reference/overview).

@@ -4,6 +4,10 @@
 
 Position, qualify, and responsibly advance authorized defensive-security workflows. Keep recommendations partner-safe, bounded, evidence-based, and governed.
 
+## In plain English
+
+The goal is not to “scan everything” or to promise that a model has secured a customer. The goal is to take one authorized security workflow, produce evidence a human can inspect, and improve the path from finding a problem to agreeing on and verifying a fix.
+
 ## Core motion
 
 1. Confirm authorization, defensive purpose, stakeholders, environment, and success criteria.
@@ -75,15 +79,15 @@ Responsible cyber adoption is a governed, evidence-led progression from an autho
 ### Cyber Lab - Northstar Financial
 
 - Submitted the required one-page PDF customer security recommendation covering the release decision, bounded pull-request review, scope and exclusions, AppSec/engineering accountability, candidate-finding classification, proof gap, guardrails, success measures, and next action.
-- The Northstar lab review cleared, the final exam was completed with 20/20 correct, and the feedback survey was submitted (usefulness 5/5; confidence 5/5). Program status: completed at 100%.
+- The Northstar lab review cleared and the final exam was completed with 20/20 correct. PartnerU then marked the program complete at 100% after the feedback step was opened. The survey-submission state was not independently verified, so do not cite survey scores as completed evidence.
 
 ### Cyber Market Moment And Daybreak Positioning
 
 - Cyber is becoming a tempo problem: software delivery and vulnerability discovery are accelerating faster than teams can validate, prioritize, remediate, and prove fixes.
 - Use the defensive workflow loop **Find → Validate → Test → Remediate → Prove**. More findings do not automatically mean more protection; the bottleneck is moving trustworthy signal to reviewed action and evidence.
-- Daybreak is a governed defensive workflow motion combining model reasoning, Codex as the harness, Codex Security workflows, governed access, and human review. It is not a standalone cyber model, autonomous fixer, replacement for AppSec/security teams, or an access/terms promise.
+- The current official model catalog describes OpenAI Daybreak as advanced cyber models for defenders and lists GPT-5.6 Cyber, Daybreak Red, and Daybreak Blue. Treat model names, aliases, availability, eligibility, and deployment terms as volatile; a catalog listing is not an entitlement. The durable workflow guardrail remains the same: Daybreak/Codex Security augments AppSec and security teams; it does not replace authorization, review, or customer-owned disposition.
 - Position from workflow pressure, not fear or model comparisons. Structure the message as: customer bottleneck → operational gap → bounded Daybreak workflow → practical Codex Security starting point (where relevant) → governance/review → responsible next step.
 - Safer proof language focuses on finding validity, evidence usefulness, noise reduction, patch quality, time to reviewed fix, reviewer confidence, and audit readiness—not benchmark claims or unsupported automation.
 - Strong first-conversation signals include vulnerability backlog, validation delays, remediation handoff friction, evidence needs, and secure-SDLC pressure. Clarify the signal source, slowdown, reviewer, evidence, authorization, and bounded asset.
 - Pause and escalate when authorization is unclear or the request involves production/live-target testing, exploit-heavy work, broad offensive automation, cyber-specialized access, special terms, or unsupported deployment claims. Mental model: **workflow first, access second, automation last**.
-- **Course completion:** Cyber Market Moment And Daybreak Positioning finished at 50/50; use the workflow-first conversation loop above for future reference.
+- **Course completion snapshot:** Cyber Market Moment And Daybreak Positioning was recorded as 50/50 in the learning session. Re-check the live dashboard before treating this as a current completion status.

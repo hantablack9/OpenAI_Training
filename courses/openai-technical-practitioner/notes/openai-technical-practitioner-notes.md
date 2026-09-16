@@ -4,6 +4,10 @@
 
 Build technical fluency to route requirements, select the right OpenAI capabilities, shape sound architectures, and account for security, data, governance, and operational constraints from the start.
 
+## In plain English
+
+You do not need to memorize every product surface to reason well. Start by asking what the customer is trying to do, what could go wrong, and what evidence would make the design trustworthy. Then choose the smallest capability that solves that problem and make the boundaries visible.
+
 ## Practical framework
 
 1. Start with the customer workflow, users, desired outcome, constraints, and success evidence.

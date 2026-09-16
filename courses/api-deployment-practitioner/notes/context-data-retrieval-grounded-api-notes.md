@@ -4,6 +4,10 @@
 
 Start with the workflow’s knowledge requirement—not with “add RAG.” Retrieval is justified when the API needs approved, current, permission-aware business knowledge at response time. More context is not automatically better.
 
+## In plain English
+
+Use retrieval when the answer must come from a source the customer owns and can check. Adding documents does not automatically make an answer reliable: the source still needs the right permissions, freshness, ownership, and a way for a reviewer to verify the claim.
+
 ## 1) Decide whether retrieval is needed
 
 Ask:

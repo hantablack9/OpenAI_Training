@@ -4,6 +4,10 @@
 
 Treat prompt behavior and safety controls as deployment controls. A successful demo is not launch evidence; validate normal, boundary, misuse, malformed, evidence, tool/action, and human-review behavior.
 
+## In plain English
+
+The prompt is only one part of the control system. Test what happens when the request is incomplete, unsafe, ambiguous, or outside the approved scope—and decide in advance when the system should clarify, refuse, or ask a person to review it.
+
 ## Prompt behavior
 
 - Define workflow purpose, allowed scope, approved sources, output schema, and safe failure behavior.
@@ -50,3 +54,9 @@ Retest after prompt, model/capability, source/retrieval, tool contract, output s
 3. Moderation, guardrails, structured-output checks, review triggers, and escalation path.
 4. Pre-launch evidence, release recommendation, conditions, and blocking gaps.
 5. Monitoring signals, pause/escalation rules, owners, open risks, and retest triggers.
+
+## Fact-check (2026-09-16)
+
+Current Responses documentation distinguishes JSON mode from Structured Outputs. JSON mode is intended to produce valid JSON; `json_schema` is the option to request a defined schema. Neither removes the need to validate business rules, permissions, source support, and downstream behavior.
+
+See the [Responses API reference](https://developers.openai.com/api/reference/cli/resources/beta/subresources/responses) and [create-a-response reference](https://developers.openai.com/api/reference/cli/resources/responses/methods/create).

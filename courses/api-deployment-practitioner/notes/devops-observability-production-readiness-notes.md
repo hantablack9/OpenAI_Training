@@ -4,6 +4,10 @@
 
 Local success is not production readiness. Before exposure, show where the API runs, how it is configured and secured, what release evidence exists, how it is observed and supported, how failures degrade or roll back, and who owns each decision.
 
+## In plain English
+
+“It worked once” is a demo result, not an operating plan. A production recommendation should explain how the service is released, watched, supported, paused, and recovered when the model, a dependency, or the customer’s data behaves unexpectedly.
+
 ## Environment and release assumptions
 
 - Distinguish local, development, staging, pilot, and production; document exposure and production-data boundaries.
@@ -25,6 +29,8 @@ Monitor signals that drive decisions:
 
 Operational logs/traces should support correlation and troubleshooting without unnecessary sensitive content. Capture server `x-request-id`, an application-supplied client request ID when used, status/error category, release version, latency, dependency status, and safe metadata. Do not log raw customer content, regulated data, credentials, hidden prompts, or sensitive tool output unless approved and necessary.
 
+In plain English: keep enough metadata to find a failing request, but do not make your debugging system a second copy of the customer’s data.
+
 ## Failure handling and support
 
 Plan for authentication/authorization failures, invalid input, timeouts, dependency/model/tool/retrieval failures, rate limits, malformed or unsupported output, and stale/missing context.
@@ -41,3 +47,5 @@ Plan for authentication/authorization failures, invalid input, timeouts, depende
 3. Post-release observability: health, errors, latency, usage, cost, quota, logs/traces, request IDs, alert triggers, data-not-to-log.
 4. Failure response: failure modes, bounded retry, fallback/degradation, incident route, escalation owner, rollback/pause criteria.
 5. Recommendation: Ready; Ready with conditions; Remediate before release; Pause/escalate; or Rollback/pause expansion. Record rationale, blocker/condition, next owner, and evidence that would change the decision.
+
+See the [API overview](https://developers.openai.com/api/reference/overview) for the current request-ID and rate-limit-header guidance.

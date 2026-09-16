@@ -1,15 +1,29 @@
 # API Contracts and Core Interfaces — concise notes
 
-Course completed: 100%
+Course status snapshot: PartnerU recorded this module as complete. Re-check the live dashboard if completion status matters.
 
 ## Core idea
 
 Choose the interface from the workflow requirement, then make request shape, response shape, state, errors, and verification explicit. A contract is a build/test/handoff tool—not a final production design or a substitute for current official documentation.
 
+## In plain English
+
+Think of the contract as the agreement between your application and the API. It should tell the next engineer what goes in, what can come back, what happens when something fails, and who must review an uncertain result.
+
+```mermaid
+flowchart LR
+    C[Caller] --> Q[Validated request]
+    Q --> I[Inference interface]
+    S[State or approved context] --> I
+    I --> O[Response, refusal, or error]
+    O --> V[Schema and evidence checks]
+    V --> H[Human review or bounded action]
+```
+
 ## Interface decision guide
 
-- **Responses API:** recommended starting point for new projects when the workflow needs structured output, tools, multimodal/agentic behavior, or controlled application-level inference. Validate current supported capabilities, SDK examples, streaming/async behavior, and limitations before implementation.
-- **Chat Completions API:** recognize in existing/legacy implementations or compatibility constraints. Do not copy it into a new workflow without checking current guidance and migration impact.
+- **Responses API:** often a strong starting point for new projects when the workflow needs structured output, tools, multimodal/agentic behavior, or controlled application-level inference. Confirm the exact supported capabilities, SDK examples, streaming/async behavior, and limitations before implementation.
+- **Chat Completions API:** may still be appropriate for existing systems or compatibility constraints. Do not copy it into a new workflow without checking current guidance and migration impact.
 - **Conversations API:** persistent conversation-state infrastructure used with Responses, not a separate inference interface. Use only when continuity across sessions, devices, jobs, or follow-up turns is required.
 
 Choose inference interface first, then a separate state approach: stateless, application-managed/chained context, or persistent Conversations state.
@@ -67,3 +81,9 @@ For every test, record request, expected response, actual response, pass/fail/ne
 ## One-line takeaway
 
 Make the API interaction specific enough that another team can build it, test it, review it, and see exactly what remains unresolved.
+
+## Fact-check (2026-09-16)
+
+The current Responses documentation describes tools, state-related options, Structured Outputs, and JSON mode. `json_schema` is the schema-enforced option; JSON mode only asks for valid JSON, so the application still needs validation. Conversations is a separate state resource used when durable conversation continuity is actually required. Check the live reference before coding because endpoint and SDK behavior can change.
+
+See the [Responses API reference](https://developers.openai.com/api/reference/cli/resources/beta/subresources/responses), [create-a-response reference](https://developers.openai.com/api/reference/cli/resources/responses/methods/create), and [Conversations API reference](https://developers.openai.com/api/reference/cli/resources/beta/subresources/conversations).

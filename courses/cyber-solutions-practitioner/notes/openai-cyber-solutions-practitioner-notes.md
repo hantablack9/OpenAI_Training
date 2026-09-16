@@ -26,6 +26,8 @@
 
 ## Daybreak solution routing and access paths
 
+The current official models catalog describes OpenAI Daybreak as advanced cyber models for defenders and lists GPT-5.6 Cyber, Daybreak Red, and Daybreak Blue. Use that as a dated product-fact check, not as a promise of access. The qualification and routing principles below remain the safer way to decide whether a workflow needs a particular capability or an approved escalation path.
+
 - Route the workflow before discussing an access path. Requests for cyber-model access, reduced refusals, Trusted Access, or “the most advanced model” are signals to clarify—not recommendations by themselves.
 - Ask: what defensive workflow is being improved; what asset/scope is authorized; where signal comes from; where work slows; who reviews findings/evidence/remediation; what proof shows improvement; and whether production, external-target, exploit-heavy, data-handling, or access concerns exist.
 - Think in three dimensions: **context** (what the AI may know/use), **agentic runtime** (where/how work happens, such as Codex Security or an approved environment), and **observability** (how work is monitored, reviewed, recorded, and escalated).

@@ -1,10 +1,14 @@
 # API Solution Architecture — concise notes
 
-Course completed: 100%
+Course status snapshot: PartnerU recorded this module as complete. Re-check the live dashboard if completion status matters.
 
 ## Core idea
 
 Architecture starts with the customer workflow and constraints—not with a model, API capability, or fashionable pattern. Produce a clear, bounded, review-ready brief before implementation.
+
+## In plain English
+
+Before anyone writes code, make sure everyone agrees on the job, the people and systems involved, and what “good” looks like. A simple model call may be enough; retrieval, tools, or agents are justified only when the workflow genuinely needs them.
 
 ## Recommended flow
 

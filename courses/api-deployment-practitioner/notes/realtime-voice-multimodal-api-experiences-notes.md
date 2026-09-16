@@ -4,6 +4,10 @@
 
 Start with the user moment and choose the simplest modality that safely solves it. Realtime, voice, image, or multimodal interaction is justified by workflow need, user context, risk, accessibility, consent, and readiness evidence—not novelty.
 
+## In plain English
+
+Choose voice, images, or realtime because they make a particular user task better—not because they look impressive in a demo. Keep important information reviewable in text, give people a way to stop or correct the system, and confirm before a consequential action.
+
 ## Choose the modality
 
 - **Realtime interaction:** low-latency back-and-forth; design turn-taking, interruptions, tool delays, correction, fallback, and monitoring.
@@ -47,3 +51,8 @@ For live audio, select the connection path from the workflow: WebRTC for browser
 5. **Verification/monitoring:** pre-release tests and modality-specific signals.
 6. **Recommendation:** safest next step, rationale, top blocker/condition, owner, and evidence that would change the recommendation.
 
+## Fact-check (2026-09-16)
+
+The current GPT-Realtime documentation lists WebRTC, WebSocket, and SIP connection paths. The workflow guidance above is therefore a useful architectural starting point, not a permanent capability guarantee: re-check the supported model, transport, authentication flow, limits, and client/server guidance immediately before implementation.
+
+See the [GPT-Realtime model documentation](https://developers.openai.com/api/docs/models/gpt-realtime).

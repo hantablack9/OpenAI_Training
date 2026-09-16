@@ -4,6 +4,10 @@
 
 Model selection is a workflow-and-evidence decision, not a prestige ranking. Start with the job the API must do, then select the least complex capability that meets predefined quality, safety, latency, reliability, and economic thresholds.
 
+## In plain English
+
+Pick the model that reliably completes the job at an acceptable cost and speed. A newer or larger model is not automatically the right answer; compare realistic examples, including failures and review effort, before recommending it.
+
 ## 1) Define the workflow
 
 - Classify the primary task: generate, summarize, classify, extract, reason, transform, retrieve, act through a tool, or support live/multimodal interaction.
@@ -50,3 +54,5 @@ Decision positions: retain; retain with conditions; remove; or defer. Name a pro
 - Separate durable decision logic from volatile product facts.
 - State what would change the recommendation (quality failure, peak-latency failure, new retrieval/tool need, sensitive-data review, or changed pricing/availability).
 - Hand off deeper review to the right owner: contract/interface, security/data handling, retrieval, tool/action design, evals/guardrails, observability, or production readiness.
+
+For the live shortlist, use the [official models catalog](https://developers.openai.com/api/docs/models) and record the date checked. Treat names, aliases, capability claims, limits, pricing, and availability as changeable facts rather than durable interview knowledge.
